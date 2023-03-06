@@ -1,0 +1,61 @@
+body {
+    background: url('./content/dddepth-247.jpg') fixed center no-repeat;
+    background-size: cover;
+}
+
+main {
+    height: auto;
+    margin-top: 10rem;
+    display: grid;
+    place-items: center;
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+}
+
+form:not(footer form) {
+    padding: 3rem;
+    margin: 3rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem;
+    border-radius: 50px;
+    background: linear-gradient(145deg, rgba(221, 221, 221), rgba(255, 255, 255, .9));
+    box-shadow: 41px 41px 100px rgba(98, 98, 98, .4),
+        -41px -41px 100px rgba(255, 255, 255, .4);
+}
+
+label span {
+    color: red;
+}
+
+label>input:not(footer input),
+label>textarea {
+    margin-top: .5rem;
+}
+
+label input,
+label textarea {
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    padding: .2rem;
+}
+
+label textarea:focus-visible {
+    outline-color: var(--accent-col2);
+}
+
+@media screen and (max-width: 570px) {
+    form:not(footer form) {
+        width: 80vw;
+        overflow: hidden;
+    }
+
+    form textarea {
+        width: 90%;
+    }
+}
