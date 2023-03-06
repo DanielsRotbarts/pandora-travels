@@ -400,7 +400,7 @@ section.header-conversion {
 /*.....Scroller Gallery Styling.......*/
 #destination-scroller-gal {
     position: relative;
-    margin-left: -7rem;
+    margin:2rem 0 2rem -7rem;
     padding: 2rem 0;
     display: flex;
     overflow: hidden;
@@ -492,7 +492,7 @@ section.header-conversion {
 .about-paragraphs {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .stand-out-text {
